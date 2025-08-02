@@ -12,7 +12,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onAuthenticated }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === 'ryeowon2025') {
+    if (password === 'ryeoden2025') {
       setIsAnimating(true);
       setTimeout(() => {
         onAuthenticated();
@@ -50,10 +50,10 @@ const LandingPage: React.FC<LandingPageProps> = ({ onAuthenticated }) => {
               <Lock className="text-white text-2xl" />
             </div>
             <h1 className="text-3xl font-bold bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent mb-2">
-              Happy Birthday!
+              happy birthday baby!
             </h1>
             <p className="text-gray-600 text-sm leading-relaxed">
-              Enter the secret password to unlock your special surprise
+              enter the secret password to unlock your special surprise
             </p>
           </div>
 
@@ -84,7 +84,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onAuthenticated }) => {
 
           <div className="mt-6 text-center">
             <p className="text-xs text-gray-400">
-              Made with 💕 for someone very special
+              made with 💕 by aiden 
             </p>
           </div>
         </div>

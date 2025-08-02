@@ -1,7 +1,16 @@
 import React from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-import storyImage1 from '../assets/story1.jpg';
+import image1 from '../assets/story1.jpg';
+import image2 from '../assets/story2.jpg';
+import image3 from '../assets/story3.jpg';
+import image4 from '../assets/story4.jpg';
+import image5 from '../assets/story5.jpg';
+import image6 from '../assets/story6.jpg';
+import image7 from '../assets/story7.jpg';
+import image8 from '../assets/story8.jpg';
+import image9 from '../assets/story9.jpg';
+import image10 from '../assets/story10.jpg';
 
 interface StoryPageProps {
   currentPage: number;
@@ -19,48 +28,53 @@ const StoryPage: React.FC<StoryPageProps> = ({
   const storyContent = [
     {
       title: "Once Upon a Time...",
-      text: "In a world filled with ordinary moments, something extraordinary was about to unfold. Today marks not just another day, but a celebration of the most wonderful person I know.",
-      image: storyImage1,
+      text: "in a world filled with ordinary moments, something extraordinary was about to unfold. today marks not just another day, but a celebration of the most wonderful couple i know.",
+      image: image1,
     },
     {
-      title: "A Special Day Begins",
-      text: "The sun rose differently today, casting golden rays that seemed to whisper 'Happy Birthday!' Every flower bloomed a little brighter, every bird sang a little sweeter, all in honor of you.",
-      image: "https://images.pexels.com/photos/1738986/pexels-photo-1738986.jpeg?auto=compress&cs=tinysrgb&w=800"
+      title: "365 days",
+      text: "365 days spent with the sweetest girl in the whole world. i love you, and my only regret was not dating you earlier (we shld've been together out of the womb)",
+      image: image2,
     },
     {
       title: "Memories to Treasure",
-      text: "I think about all the beautiful memories we've shared together. Every laugh, every adventure, every quiet moment has painted the most colorful story in my heart.",
-      image: "https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=800"
+      text: "being in a long distance relationship with you has given us these countless precious memories, made with every single second spent with you. thanks for all these happy times!",
+      image: image3,
     },
     {
       title: "Your Beautiful Smile",
-      text: "Your smile has the power to light up the darkest days and make everything feel possible. It's like having a piece of sunshine that follows you wherever you go.",
-      image: "https://images.pexels.com/photos/1322531/pexels-photo-1322531.jpeg?auto=compress&cs=tinysrgb&w=800"
+      text: "being next to you has made me realise how sweet your smile is. seeing you gleam with joy next to me warms my heart every single time. my pretty girl C:",
+      image: image4,
     },
     {
       title: "Adventures Together",
-      text: "From spontaneous road trips to cozy movie nights, every adventure with you becomes a treasured chapter in our story. You make the ordinary feel magical.",
-      image: "https://images.pexels.com/photos/1418595/pexels-photo-1418595.jpeg?auto=compress&cs=tinysrgb&w=800"
+      text: "from USS/Lotte World to our boujee dinners, every activity is always so fun. we've explored so much and i can't wait for a life's worth of more.",
+      image: image5,
     },
     {
       title: "Your Kind Heart",
-      text: "Your kindness touches everyone around you. You have this amazing ability to make people feel seen, valued, and loved. The world is brighter because you're in it.",
-      image: "https://images.pexels.com/photos/1122865/pexels-photo-1122865.jpeg?auto=compress&cs=tinysrgb&w=800"
+      text: "although you whine alot (JK!), you treat me so well and care for me regardless, ur the best. thanks for always being there for me",
+      image: image6,
     },
     {
-      title: "Dreams and Wishes",
-      text: "As you blow out your birthday candles, know that I'm wishing for all your dreams to come true. You deserve every happiness, every success, every beautiful moment life has to offer.",
-      image: "https://images.pexels.com/photos/1729797/pexels-photo-1729797.jpeg?auto=compress&cs=tinysrgb&w=800"
+      title: "Our Future",
+      text: "as we blow out the candles of our first anniversary, know that i'm looking forward to many many more of these. i can't wait to spend my life with you :D",
+      image: image7,
     },
     {
       title: "Grateful for You",
-      text: "I'm so grateful that our paths crossed in this big, wide world. Having you in my life is one of the greatest gifts I could ever ask for.",
-      image: "https://images.pexels.com/photos/1784578/pexels-photo-1784578.jpeg?auto=compress&cs=tinysrgb&w=800"
+      text: "i'm so grateful that our paths crossed in this big, wide world. having you in my life has genuinley been one of the greatest gifts i could ever ask for.",
+      image: image8,
     },
     {
-      title: "Happy Birthday! 🎉",
-      text: "Today and always, you are celebrated, cherished, and loved beyond measure. May this new year of your life be filled with endless joy, laughter, and all the beautiful things your heart desires. Happy Birthday! 💕",
-      image: "https://images.pexels.com/photos/1729807/pexels-photo-1729807.jpeg?auto=compress&cs=tinysrgb&w=800"
+      title: "Meet Again Soon",
+      text: "although we just met (it's been years) i'll see you soon ryeo, i promise i'll try my best D: in the mean time u HAVE to try and come as well ok???",
+      image: image9,
+    },
+    {
+      title: "Happy Anniversary! 🎉",
+      text: "today marks our first anniversary! i'm so happy we've reached this milestone (it was really easy). cheers to our future, i love you ryeo💕 -ur hubs",
+      image: image10,
     }
   ];
 
