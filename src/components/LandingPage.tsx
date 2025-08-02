@@ -50,7 +50,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onAuthenticated }) => {
               <Lock className="text-white text-2xl" />
             </div>
             <h1 className="text-3xl font-bold bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent mb-2">
-              1 Year!!
+              1 year with you <3
             </h1>
             <p className="text-gray-600 text-sm leading-relaxed">
               enter the secret password to unlock your special surprise
