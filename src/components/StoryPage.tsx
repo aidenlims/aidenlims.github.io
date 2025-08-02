@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-import storyImage1 from '../assets/images/story1.jpg';
+import storyImage1 from '../assets/story1.jpg';
 
 interface StoryPageProps {
   currentPage: number;
