@@ -1,6 +1,8 @@
 import React from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
+import storyImage1 from '../assets/images/story1.jpg';
+
 interface StoryPageProps {
   currentPage: number;
   totalPages: number;
@@ -18,7 +20,7 @@ const StoryPage: React.FC<StoryPageProps> = ({
     {
       title: "Once Upon a Time...",
       text: "In a world filled with ordinary moments, something extraordinary was about to unfold. Today marks not just another day, but a celebration of the most wonderful person I know.",
-      image: "https://images.pexels.com/photos/1363876/pexels-photo-1363876.jpeg?auto=compress&cs=tinysrgb&w=800"
+      image: storyImage1,
     },
     {
       title: "A Special Day Begins",
@@ -54,11 +56,6 @@ const StoryPage: React.FC<StoryPageProps> = ({
       title: "Grateful for You",
       text: "I'm so grateful that our paths crossed in this big, wide world. Having you in my life is one of the greatest gifts I could ever ask for.",
       image: "https://images.pexels.com/photos/1784578/pexels-photo-1784578.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-      title: "Looking Forward",
-      text: "As you start another year of your amazing journey, I can't wait to see all the incredible things you'll accomplish and the joy you'll spread along the way.",
-      image: "https://images.pexels.com/photos/1624438/pexels-photo-1624438.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
       title: "Happy Birthday! 🎉",
