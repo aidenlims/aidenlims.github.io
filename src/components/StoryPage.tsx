@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Heart } from 'lucide-react';
 
 import image1 from '../assets/story1.jpg';
 import image2 from '../assets/story2.jpg';
@@ -80,9 +80,30 @@ const StoryPage: React.FC<StoryPageProps> = ({
 
   const currentStory = storyContent[currentPage - 1];
 
+  // Floating hearts JSX
+  const floatingHearts = (
+    <div className="absolute inset-0 pointer-events-none z-0">
+      {[...Array(15)].map((_, i) => (
+        <Heart
+          key={i}
+          className="absolute text-pink-300 opacity-20 animate-bounce"
+          style={{
+            left: `${Math.random() * 100}%`,
+            top: `${Math.random() * 100}%`,
+            animationDelay: `${Math.random() * 3}s`,
+            animationDuration: `${3 + Math.random() * 2}s`,
+            fontSize: `${12 + Math.random() * 20}px`,
+          }}
+        />
+      ))}
+    </div>
+  );
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-rose-50 to-pink-100 flex items-center justify-center p-4">
-      <div className="w-full max-w-4xl mx-auto">
+    <div className="relative min-h-screen bg-gradient-to-br from-pink-50 via-rose-50 to-pink-100 flex items-center justify-center p-4 overflow-hidden">
+      {floatingHearts}
+
+      <div className="w-full max-w-4xl mx-auto z-10">
         <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden border border-pink-200">
           {/* Page Counter */}
           <div className="bg-gradient-to-r from-pink-500 to-rose-500 text-white text-center py-3">
